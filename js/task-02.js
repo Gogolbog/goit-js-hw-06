@@ -12,11 +12,11 @@ const ulEl = document.getElementById("ingredients");
 console.log("ulEl: ", ulEl);
 
 
-ingredients.forEach((...ingredient) => {
+const ingredient = ingredients.map((item) => {
   const liEl = document.createElement("li");
-  liEl.classList.add("item")
-  liEl.textContent = ingredient[0];
-  console.log("liEl: ", liEl);
-
-  ulEl.append(liEl);
+  liEl.classList.add("item");
+  liEl.textContent = item;
+  return liEl;
 });
+
+ulEl.append(...ingredient);
