@@ -24,5 +24,11 @@ button {
 }
 
 .gallery-img {
-  width: 200px;
+  width: 180px;
+  height: 150px;
+}
+
+.gallery {
+  display: flex;
+  gap: 30px;
 }

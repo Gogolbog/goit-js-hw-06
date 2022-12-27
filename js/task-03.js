@@ -17,7 +17,7 @@ const ulEl = document.querySelector(".gallery")
 console.log("ulEl: ", ulEl);
 
 const createLiEl = images.map(
-  (image) => `<li><img class="gallery-img" src=${image.url} alt=${image.alt}></li>`
+  (image) => `<li><img class="gallery-img" src="${image.url}" alt="${image.alt}"></li>`
 ).join("");
 
 ulEl.insertAdjacentHTML("beforeend", createLiEl);
